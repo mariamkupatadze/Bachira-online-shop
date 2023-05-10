@@ -1,0 +1,97 @@
+.container {
+
+    .box {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .title {
+            
+            height: 140px;
+            margin-top: 102px;
+            h1 {
+                font-family: 'Manrope-bold';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 46px;
+                line-height: 70px;
+                letter-spacing: 0.3px;
+                color: #101913;
+                margin-bottom: 32px;
+    
+                span {
+                    color:#3C9379;
+                }
+            }
+    
+            p {
+                font-family: 'Manrope';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0.3px;
+                color: #535A56;
+                margin-bottom: 32px;
+    
+            }
+    
+            button {
+                padding: 16px 22px;
+                background: #3C9379;
+                border-radius: 8px;
+                font-family: 'Manrope';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 16px;
+                letter-spacing: 0.3px;
+                border: none;
+                color: #FFFFFF;
+    
+            }
+        }
+    
+        img {
+            width: 833px;
+            height: 519px;
+            left: 1421px;
+            top: 124px;
+            margin-top: 56px;
+        }
+    }
+    
+    .brands {
+        margin-top: 75px;
+        width: 100%;
+    
+        p {
+            text-align: center;
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 40px;
+            text-align: center;
+            letter-spacing: 0.3px;
+            color: #101913;
+    
+        }
+
+        .category {
+            margin-top: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .image {
+                display: flex;
+                gap:10px;
+            }
+    
+    
+        }
+    }
+
+}

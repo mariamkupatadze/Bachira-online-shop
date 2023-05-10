@@ -1,0 +1,72 @@
+
+
+nav {
+    h1 {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 36px;
+        
+        span {
+            color:#3C9379;
+        }
+    }
+
+    .navbar-nav {
+        gap: 40px;
+    
+        .nav-item {
+    
+            .nav-link {
+                &.activeRoute {
+                    font-weight: bold;
+                    text-shadow: 2px 2px 5px #3C9379;
+                }
+
+                font-family: 'Manrope';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 16px;
+                letter-spacing: 0.3px;
+                color: #101913;
+                cursor: pointer;
+                }
+        }
+    }
+    
+    form {
+        .log-in {
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 16px;
+            letter-spacing: 0.3px;
+            color: #101913;
+         }
+    
+         .register {
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 16px;
+            letter-spacing: 0.3px;
+            color: #FFFFFF;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 12px 18px;
+            gap: 10px;
+    
+            width: 102px;
+            height: 40px;
+            background: #3C9379;
+            border-radius: 8px;
+         }
+    }
+}
+
