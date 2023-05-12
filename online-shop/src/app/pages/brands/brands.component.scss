@@ -1,0 +1,20 @@
+.Brands {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+
+    h1 {
+        font-family: 'Manrope-bold';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 40px;
+        letter-spacing: 0.3px;
+        color: #101913;
+        cursor: pointer;
+        text-shadow: 2px 2px 5px gray
+        }
+}

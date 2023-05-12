@@ -126,4 +126,31 @@ export class ProductsComponent {
     },
   ]
 
+  balenciagaBag : any = [
+    {
+      img: 'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/231342F048051_1/balenciaga-white-small-le-cagole-shoulder-bag.jpg',
+      name: 'White small Bag',
+      price: '2110',
+      gift: false, 
+    },
+    {
+      img: 'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/231342F048029_1/balenciaga-black-mini-le-cagole-bag.jpg',
+      name: 'Black mini Bag',
+      price: '1490',
+      gift: true,
+    },
+    {
+      img: 'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222342F048095_1/balenciaga-pink-mini-le-cagole-denim-bag.jpg',
+      name: 'Pink mini Bag',
+      price: '1340',
+      gift: false, 
+    },
+    {
+      img: 'https://img.ssensemedia.com/images/b_white,c_lpad,g_south,h_1086,w_724/c_scale,h_480/f_auto,q_auto/222342F048012_1/balenciaga-white-small-lindsay-shoulder-bag.jpg',
+      name: 'White small Bag',
+      price: '1690',
+      gift: true,
+    },
+  ]
+
 }
