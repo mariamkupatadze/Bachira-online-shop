@@ -194,6 +194,45 @@
             line-height: 40px;
             letter-spacing: 0.3px;
             color: #101913;
+            margin-bottom: 20px;
         }
+
+        .all-brand {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .all-brand-box {
+
+                img {
+                    border-radius: 20px;
+                }
+           
+                h3 {
+                    font-family: 'Manrope-bold';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 20px;
+                    letter-spacing: 0.3px;
+                    color: #101913;
+                    margin-top: 15px;
+                    margin-bottom: 8px;
+                }
+
+                p {
+                    font-family: 'Manrope';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 16px;
+                    letter-spacing: 0.3px;
+                    color: #101913;
+
+                }
+            }
+        }
+
+       
     }
 }
