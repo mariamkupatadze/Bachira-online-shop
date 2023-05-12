@@ -94,4 +94,106 @@
         }
     }
 
+    .our-store {
+        margin-top: 130px;
+    
+        h1 {
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 40px;
+            letter-spacing: 0.3px;
+            color: #101913;
+            margin-bottom: 30px;
+        }
+    
+        .store-img {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            
+    
+            .img-box {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 32px;
+            }
+        }
+    }
+    
+    .why-bachira {
+        margin-top: 100px;
+    
+        .bachira-title {
+            text-align: center;
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 40px;
+            letter-spacing: 0.3px;
+            color: #101913;
+    
+            span {
+                color:#3C9379;
+            }
+        }
+    
+        .bachira-box {
+            margin-top: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+    
+            .Bachira-detail {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+    
+                h2 {
+                    font-family: 'Manrope-bold';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 20px;
+                    letter-spacing: 0.3px;
+                    color: #101913;
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                }
+    
+                .bachira-text {
+                    font-family: 'Manrope';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                    text-align: center;
+                    letter-spacing: 0.3px;
+                    color: #535A56;
+                }
+            }
+        }
+
+    }
+
+    .All-brands {
+        margin-top: 100px;
+
+        h1 {
+                        
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 40px;
+            letter-spacing: 0.3px;
+            color: #101913;
+        }
+    }
 }
