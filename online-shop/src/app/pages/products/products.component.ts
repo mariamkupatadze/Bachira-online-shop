@@ -170,6 +170,7 @@ export class ProductsComponent implements OnInit{
                 for(const key in res) {
                   let product: product = {
                     brand: res[key].brand,
+                    name: res[key].name,
                     price: res[key].price,
                     size: res[key].size,
                     image: res[key].image,

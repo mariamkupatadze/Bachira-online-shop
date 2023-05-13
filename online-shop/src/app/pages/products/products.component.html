@@ -1,14 +1,16 @@
   
   <div class="container">
-    <h1>Products</h1>
+    <h1>Women's Popular Bags & Shoes </h1>
     <div class="box">
       <div class="card" *ngFor="let product of productsArray" > 
         <img class="coverImg" src="{{product.image}}" alt="">
          <div class="card-body">
            <h3>{{product.brand}}</h3>
+           <h5>{{product.name}}</h5>
+           <p >Category: {{product.category}}<p>
            <h5>Price: {{product.price}} $</h5>
-           <p >{{product.category}}<p>
            <p >size: {{product.size}}</p>
+           <button type="button" (click)="deleteProduct(product.id)" class="btn btn-danger delete">Delete</button>
          </div>
        </div>
     </div>

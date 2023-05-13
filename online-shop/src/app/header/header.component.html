@@ -15,20 +15,22 @@
             <a class="nav-link" routerLink="products" routerLinkActive="activeRoute">Products</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="categories" routerLinkActive="activeRoute">Categories</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" routerLink="brands" routerLinkActive="activeRoute">Brands</a>
           </li> 
-          <li class="nav-item">
-            <a class="nav-link" routerLink="admin" routerLinkActive="activeRoute" *ngIf="getUser()">admin</a>
-          </li>
         </ul>
         <form class="d-flex" role="search">
-          <!-- <button type="button" class="btn btn-light log-in">Login</button> -->
-          <button type="button" class="btn btn-primary register"  routerLink="login-register" *ngIf="!getUser()">Login / Register</button>
-          <button type="button" class="btn btn-primary log-out" (click)="signout()" *ngIf="getUser()">Sign Out</button>
-
+          <button type="button" class="btn btn-primary register"  routerLink="login-register" *ngIf="!getUser()">Sign In</button>
+          <div class="dropdown" *ngIf="getUser()">
+            <button class="btn btn-success admin" style="border-radius: 100%" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-person-fill"></i>
+            </button>
+            <ul class="dropdown-menu " >
+              <li><a class="dropdown-item" routerLink="admin" routerLinkActive="activeRoute">Profile</a></li>
+              <li><a class="dropdown-item" routerLink="admin" routerLinkActive="activeRoute" (click)="openAddProduct()">Add Product</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item sign-out"  (click)="signout()">Sign Out</a></li>
+            </ul>
+          </div>
         </form>
       </div>
     </div>

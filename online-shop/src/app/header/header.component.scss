@@ -24,6 +24,12 @@ nav {
                     text-shadow: 2px 2px 5px #3C9379;
                 }
 
+                i {
+                     color: rgb(104, 102, 102);
+                    font-size: 18px;
+                    padding: 3px 3px;
+                }
+
                 font-family: 'Manrope';
                 font-style: normal;
                 font-weight: 500;
@@ -53,16 +59,27 @@ nav {
             padding: 12px 18px;
             gap: 10px;
             border: none;
-            width: 170px;
+            width: 100px;
             height: 40px;
             background: #3C9379;
             border-radius: 8px;
          }
 
-         .log-out {
+         .sign-out {
+            cursor: pointer;
+         }
+
+        .admin {
+            display: flex;
+            align-items: center;
+            background-color: #3C9379;
+            color:white;
             border: none;
-            background-color:#3C9379;
         }
+    }
+
+    .dropdown-menu  :hover {
+        color: #3C9379
     }
 }
 

@@ -8,7 +8,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProductsComponent } from './pages/products/products.component';
-import { CategoriesComponent } from './pages/categories/categories.component';
 import { BrandsComponent } from './pages/brands/brands.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginRegisterComponent } from './pages/login-register/login-register.component';
@@ -37,7 +36,6 @@ import { MatCardModule } from '@angular/material/card';
     HeaderComponent,
     HomeComponent,
     ProductsComponent,
-    CategoriesComponent,
     BrandsComponent,
     FooterComponent,
     LoginRegisterComponent,
