@@ -1,0 +1,15 @@
+.title {
+    text-align: center;
+}
+.content {
+    padding-top: 15px;
+
+    .row {
+        display: flex;
+        gap:15px;
+
+        mat-form-field {
+            width: 100%;
+        }
+    }
+}

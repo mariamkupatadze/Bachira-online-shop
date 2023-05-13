@@ -1,0 +1,50 @@
+
+<div area mat-dialog-title>
+    <h1 class="title">დაამატე პროდუქტი</h1>
+</div>
+<div mat-dialog-content class="content">
+    <form [formGroup]="reactiveForm" (ngSubmit)="onFormSubmit()">
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Brand</mat-label>
+                <input matInput type="text" formControlName="brand" >
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Price</mat-label>
+                <input matInput type="number" formControlName="price">
+            </mat-form-field>
+        </div>
+
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Image Link</mat-label>
+                <input matInput type="text" formControlName="image">
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Category: </mat-label>
+                <mat-select formControlName="category">
+                  <mat-option *ngFor="let category of categories" [value]="category">
+                    {{category}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>size: </mat-label>
+                <input matInput type="number" formControlName="size">
+            </mat-form-field>
+        </div>
+
+        <div mat-dialog-actions class="actions">
+            <button mat-raised-button color="warn">Delete</button>
+            <button mat-raised-button color="primary" type="submit">Add Product</button>
+        </div>
+     
+    </form>
+</div>
+    
+

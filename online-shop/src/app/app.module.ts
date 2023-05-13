@@ -13,6 +13,22 @@ import { BrandsComponent } from './pages/brands/brands.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginRegisterComponent } from './pages/login-register/login-register.component';
 import { FirebaseService } from './services/firebase.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AdminComponent } from './admin/admin.component';
+
+import { MatButtonModule } from '@angular/material/button';
+import {MatDialogModule} from '@angular/material/dialog';
+import { AddProductPageComponent } from './add-product-page/add-product-page.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatFormFieldModule } from '@angular/material/form-field';
+
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { MatCardModule } from '@angular/material/card';
+
 
 
 @NgModule({
@@ -25,10 +41,22 @@ import { FirebaseService } from './services/firebase.service';
     BrandsComponent,
     FooterComponent,
     LoginRegisterComponent,
+    AdminComponent,
+    AddProductPageComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MatButtonModule,
+    MatDialogModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatInputModule,
+    MatSelectModule,
+    MatFormFieldModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    MatCardModule,
     AngularFireModule.initializeApp ({
       apiKey: "AIzaSyAYGsysSmrHC3x7gMSX_MliGOz1DRR465Q",
       authDomain: "online-shop-b9ca5.firebaseapp.com",
@@ -37,7 +65,8 @@ import { FirebaseService } from './services/firebase.service';
       messagingSenderId: "97800888789",
       appId: "1:97800888789:web:9a7f168115a583dfb5dd5c",
       measurementId: "G-CWHD2XBJK4"
-    })
+    }),
+    BrowserAnimationsModule
   ],
   providers: [FirebaseService],
   bootstrap: [AppComponent]
