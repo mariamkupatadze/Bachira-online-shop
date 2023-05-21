@@ -34,6 +34,7 @@ export class ProductsComponent implements OnInit{
                     category: res[key].category,
                     id : key
                   }
+                  
                   products.push(product)
                 }
                 return products;
