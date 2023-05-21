@@ -28,6 +28,10 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MatCardModule } from '@angular/material/card';
 import { RegisterComponent } from './pages/register/register.component';
+import { GucciComponent } from './brands/gucci/gucci.component';
+import { AdidasComponent } from './brands/adidas/adidas.component';
+import { BalenciagaComponent } from './brands/balenciaga/balenciaga.component';
+import { NikeComponent } from './brands/nike/nike.component';
 
 
 
@@ -43,6 +47,10 @@ import { RegisterComponent } from './pages/register/register.component';
     AdminComponent,
     AddProductPageComponent,
     RegisterComponent,
+    GucciComponent,
+    AdidasComponent,
+    BalenciagaComponent,
+    NikeComponent,
   ],
   imports: [
     BrowserModule,

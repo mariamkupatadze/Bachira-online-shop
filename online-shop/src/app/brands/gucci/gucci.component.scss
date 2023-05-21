@@ -1,0 +1,62 @@
+.container {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    .card {
+        width: 600px;
+        height: 700px;
+        box-shadow: 3px 3px 10px gray;
+
+        img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+        }
+
+        .card-body {
+
+           
+            p {
+                font-family: 'Manrope';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 16px;
+                letter-spacing: 0.3px;
+                color: #101913; 
+
+            }
+            h3 {
+                position: absolute;
+                top:20px;
+                right: 20px;
+                font-family: 'Manrope';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 16px;
+                letter-spacing: 0.3px;
+                color: rgb(143, 11, 11);
+            }
+
+            h4 {
+                font-family: 'Manrope';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 16px;
+                letter-spacing: 0.3px;
+                color: #101913;
+
+                i {
+                    font-size: 20px;
+                    color: red;
+                }
+
+            }
+        }
+    }
+}
