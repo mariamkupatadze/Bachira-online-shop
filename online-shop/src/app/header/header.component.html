@@ -19,7 +19,7 @@
           </li> 
         </ul>
         <form class="d-flex" role="search">
-          <button type="button" class="btn btn-primary register"  routerLink="login-register" *ngIf="!getUser()">Sign In</button>
+          <button type="button" class="btn btn-primary register"  routerLink="login" *ngIf="!getUser()">Sign In</button>
           <div class="dropdown" *ngIf="getUser()">
             <button class="btn btn-success admin" style="border-radius: 100%" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="bi bi-person-fill"></i>

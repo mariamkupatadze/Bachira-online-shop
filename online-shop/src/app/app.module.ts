@@ -10,7 +10,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { BrandsComponent } from './pages/brands/brands.component';
 import { FooterComponent } from './footer/footer.component';
-import { LoginRegisterComponent } from './pages/login-register/login-register.component';
+import { LoginComponent } from './pages/login/login.component';
 import { FirebaseService } from './services/firebase.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AdminComponent } from './admin/admin.component';
@@ -27,6 +27,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MatCardModule } from '@angular/material/card';
+import { RegisterComponent } from './pages/register/register.component';
 
 
 
@@ -38,9 +39,10 @@ import { MatCardModule } from '@angular/material/card';
     ProductsComponent,
     BrandsComponent,
     FooterComponent,
-    LoginRegisterComponent,
+    LoginComponent,
     AdminComponent,
     AddProductPageComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,

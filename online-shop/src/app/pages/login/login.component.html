@@ -1,0 +1,19 @@
+
+<div class="container">
+
+  <form [formGroup]="signInReactiveForm" (ngSubmit)="onSubmit()">
+    <div class="sign-in">
+        <h2>Sign In</h2>
+      
+        <label for="email" >Email address</label>
+        <input type="text"  id="email" #signUpEmail placeholder="email" formControlName="email"> 
+        <label class="labelValidators">*Enter your Email</label>
+
+        <label for="password" >Password</label>
+        <input type="password"  id="password" #signUpPassword placeholder="password" formControlName="password">
+        <label class="labelValidators">*Enter at least 6 charactors</label> 
+
+        <button type="submit"
+        class="btn btn-primary login" >Sign In</button>
+        <a class="btn btn-light signUp" routerLink="../register">sign Up</a>
+</div>

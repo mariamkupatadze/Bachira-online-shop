@@ -1,0 +1,126 @@
+.container {
+    width: 100%;
+    height: fit-content;
+    padding: 100px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .sign-up {
+        width: 450px;
+        height: fit-content;
+        padding: 40px 50px;
+        background-color: #3C9379;
+        border-radius: 10px;
+    
+        h2 {
+            margin-bottom: 20px;
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 40px;
+            letter-spacing: 0.5px;
+            color: white;            
+        }
+    
+        label {
+            display: block;
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 20px;
+            letter-spacing: 0.3px;
+            color: white;
+            margin-bottom: 8px;
+        }
+    
+        input {
+            width: 100%;
+            padding: 5px 15px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            border: none;
+            box-shadow: 3px 3px 10px gray;
+            outline: none;
+        }
+
+        .gender-box {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            gap:15px;
+            align-items: center;
+            margin-bottom: 10px;
+
+            .gender-option {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+            
+                    #male {
+                        width: 15px !important;
+                        height: 15px !important;
+                        margin-bottom: 6px !important;
+                    
+                    }
+
+                    #female {
+                        width: 15px !important;
+                        height: 15px !important;
+                        margin-bottom: 6px !important;
+                    }
+
+            }
+
+        }
+    
+        .labelValidators {
+            display: none;
+        }
+    
+        input.ng-invalid.ng-touched + .labelValidators {
+            display: block;
+            color: rgb(190, 8, 8);
+            margin-top: -18px;
+            font-weight: 500;
+            font-size: 12px;
+        }
+    
+        .register {
+    
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 16px;
+            letter-spacing: 0.3px;
+            color: #3C9379;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 12px 18px;
+            gap: 10px;
+            width: 100px;
+            height: 40px;
+            background: white;
+            border-radius: 8px;
+            border: none;
+            display: inline-block;
+        }
+
+        .sign-in {
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 16px;
+            letter-spacing: 0.3px;
+            color: white;
+            padding: 12px 18px;
+         }
+    }
+}

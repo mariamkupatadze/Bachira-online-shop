@@ -1,0 +1,44 @@
+<div class="container">
+    <form [formGroup]="signUpReactiveForm" (ngSubmit)="onSubmit()">
+        <div class="sign-up">
+            <h2>Register</h2>
+            <label for="firstname" >Firstname</label>
+            <input type="text"  id="firstname" placeholder="firstname" formControlName="firstname">
+            <label class="labelValidators">*Required</label>
+    
+            <label for="lastname" >Lastname</label>
+            <input type="text"  id="lastname" placeholder="lastname" formControlName="lastname">
+            <label class="labelValidators">*Required</label>
+
+
+           <div class="gender-box">
+                <div class="gender-option">
+                    <input type="radio" name="gender" id="male" value="male" formControlName="gender">
+                    <label  for="male">Male</label>
+                </div>
+                <div class="gender-option">   
+                    <input  type="radio" name="gender" id="female" value="female" formControlName="gender">
+                    <label  for="female">Female</label>
+                </div>
+           </div>
+           
+            <label for="email" >Email address</label>
+            <input type="text"  id="email" #signUpEmail placeholder="email" formControlName="email"> 
+            <label class="labelValidators">*Enter your Email</label>
+    
+            <label for="password" >Password</label>
+            <input type="password"  id="password" #signUpPassword placeholder="password" formControlName="password">
+            <label class="labelValidators">*Enter at least 6 charactors</label> 
+    
+            <button type="submit" class="btn btn-primary register" >Sign Up</button>
+            <a class="btn sign-in" routerLink="../login">Sign In</a>
+            <div class="alert alert-danger" style="margin-top: 20px" *ngIf="errorText">
+                {{ errorText }}
+            </div>
+            <div class="alert alert-success" style="margin-top: 20px" *ngIf="successText">
+                {{ successText }}
+            </div>
+        </div>
+        
+    </form>
+</div>
