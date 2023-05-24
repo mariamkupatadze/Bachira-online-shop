@@ -16,4 +16,8 @@
         <button type="submit"
         class="btn btn-primary login" >Sign In</button>
         <a class="btn btn-light signUp" routerLink="../register">sign Up</a>
+
+        <div class="alert alert-danger" style="margin-top: 20px" *ngIf="errorText">
+          {{ errorText }}
+      </div>
 </div>

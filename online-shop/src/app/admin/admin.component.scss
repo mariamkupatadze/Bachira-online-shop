@@ -1,0 +1,91 @@
+.container {
+    
+    .card {
+        width: 400px;
+        height: 600px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        top:0;
+        left:0;
+        margin: auto;
+        margin-top: 100px;
+        border-radius: 20px;
+    
+        .id {
+            width:250px;
+            height: 40px;
+            border-radius: 4%;
+            position: absolute;
+            bottom:0px;
+            left:10px;  
+            color: white;      
+        }
+    
+        img {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        }
+    
+        .card-body {
+            width: fit-content !important;
+            height: fit-content!important;
+            position: absolute;
+            top:10%;
+            left:50%;
+            transform: translateX(-50%);
+            width: 100%;
+            height: fit-content;
+            text-align: center;
+    
+            .box {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                background-color: #3C9379;
+                border: 2px solid rgb(244, 240, 240);
+                margin: auto;
+                position: relative;
+                top:0;
+                left:0;
+                
+                h1 {
+                    color: white;
+                    position: absolute;
+                    top:50%;
+                    left:50%;
+                    transform: translate(-50%, -50%);
+                    font-family: 'Manrope';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 86px;
+                    line-height: 16px;
+                    letter-spacing: 0.3px;
+                }
+            }
+    
+            .card-title {
+                margin-top: 40px;
+                color:white;
+                font-family: 'Manrope-bold';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 16px;
+                letter-spacing: 0.3px;
+            }
+    
+            .card-text {
+                color: white;
+                font-family: 'Manrope';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 16px;
+                letter-spacing: 0.3px;
+            }
+        }
+    }
+  
+}

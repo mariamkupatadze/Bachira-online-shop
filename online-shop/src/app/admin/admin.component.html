@@ -1,3 +1,32 @@
 <div class="container">
-    <h1>Profile page</h1>
-</div>
+    <!-- <div class="box">
+      <div class="card" *ngFor="let product of productsArray" > 
+        <img class="coverImg" src="{{product.image}}" alt="">
+         <div class="card-body">
+           <h3>{{product.firstname}}</h3>
+           <h5>{{product.lastname}}</h5>
+           <p >Gender: {{product.gender}}<p>
+           <h5>email: {{product.email}} </h5>
+           <p >password: {{product.password}}</p>
+         </div>
+       </div>
+    </div> -->
+
+    
+<div class="card" >
+    <div class="id">
+      <h4> ID: {{ user?.id }}</h4>
+    </div>
+    <img src="https://e1.pxfuel.com/desktop-wallpaper/479/320/desktop-wallpaper-dark-green-mobile-dark-green-thumbnail.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <div class="box">
+        <h1>{{ firstLetter }}</h1>
+      </div>
+      <h3 class="card-title">{{user?.firstname}}  {{user?.lastname}}</h3>
+      <h5 class="card-text">{{user?.email}} </h5>
+      <!-- <p class="card-text">password: {{user?.password}}</p> -->
+      <p class="card-text">{{user?.gender}}<p></p>
+    </div>
+  </div>
+  </div>
+
