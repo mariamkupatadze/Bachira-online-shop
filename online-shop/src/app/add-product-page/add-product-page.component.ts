@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { MatDialogRef } from '@angular/material/dialog';
+import { FirebaseService } from '../services/firebase.service';
 
 @Component({
   selector: 'app-add-product-page',
@@ -21,7 +22,7 @@ export class AddProductPageComponent implements OnInit {
   
   reactiveForm: FormGroup;
 
-  constructor(private _reactForm: FormBuilder, private _http: HttpClient, private _dialogRef: MatDialogRef<AddProductPageComponent>) {
+  constructor(private _reactForm: FormBuilder, private _http: HttpClient, private _dialogRef: MatDialogRef<AddProductPageComponent>, private firebaseService: FirebaseService) {
    
 
   }
@@ -48,7 +49,8 @@ export class AddProductPageComponent implements OnInit {
 
   onFormSubmit() {
     if (this.reactiveForm.valid) {
-     this._http.post("https://online-shop-b9ca5-default-rtdb.europe-west1.firebasedatabase.app/products.json", this.reactiveForm.value)
+      const params = { ...this.reactiveForm.value, email : this.firebaseService.getUser()?.email}
+      this._http.post("https://online-shop-b9ca5-default-rtdb.europe-west1.firebasedatabase.app/products.json", params)
         .subscribe((response) => {
           this.errorText = '';
           this.successText = 'Product successfully added!'

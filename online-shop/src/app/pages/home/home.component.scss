@@ -4,11 +4,11 @@
         display: flex;
         width: 100%;
         justify-content: space-between;
-        flex-wrap: wrap;
+
         .title {
-            
             height: 140px;
             margin-top: 102px;
+
             h1 {
                 font-family: 'Manrope-bold';
                 font-style: normal;
@@ -48,6 +48,7 @@
                 letter-spacing: 0.3px;
                 border: none;
                 color: #FFFFFF;
+                cursor: pointer;
     
             }
         }
@@ -60,6 +61,63 @@
             margin-top: 56px;
         }
     }
+ 
+@media only screen and (max-width: 1600px) { 
+   .box img{
+    width: 600px;
+    height: 400px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .box img{
+     width: 400px;
+     height: 300px;
+     }
+
+    .title h1 {
+        font-size: 35px !important;
+        line-height: 50px !important;  
+    }
+ }
+
+ @media only screen and (max-width: 995px) {
+    .title h1 {
+        font-size: 30px !important;
+        line-height: 40px !important;    
+    }
+ }
+
+ @media only screen and (max-width: 767px) { 
+        .title h1 {
+        font-size: 25px !important;
+        line-height: 25px !important;  
+        margin-bottom: 20px !important;  
+
+    }
+    .title p {
+        font-size: 10px !important;
+        line-height: 12px !important; 
+        margin-bottom: 20px !important;
+    }
+
+    .title button {
+        padding: 10px 12px !important;
+        font-size: 12px !important;
+    }
+
+}
+
+@media only screen and (max-width: 530px) { 
+    .box img{
+     width: 220px;
+     height: 200px;
+     }
+
+     .title {
+        margin-top: 52px !important;
+     }
+ }
     
     .brands {
         margin-top: 75px;
@@ -84,9 +142,11 @@
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
+            
 
             .image {
                 display: flex;
+                flex-wrap: wrap;
                 gap:10px;
             }
     
@@ -94,10 +154,32 @@
         }
     }
 
+    @media only screen and (max-width: 1240px) { 
+        .brands p {
+            font-size: 25px !important;
+        }
+        .category {
+        justify-content: center !important;
+        gap: 30px;
+        }
+    }
+
+    @media only screen and (max-width: 530px) { 
+        .brands {
+            margin-top: 100px !important;
+        }
+        .brands p {
+            font-size: 18px !important;
+            line-height: 20px !important;
+        }
+     }
+
+
+
     .our-store {
         margin-top: 130px;
     
-        h1 {
+        .our-store-title {
             font-family: 'Manrope';
             font-style: normal;
             font-weight: 700;
@@ -123,7 +205,33 @@
                 gap: 32px;
             }
         }
+
+        @media only screen and (max-width: 1400px) { 
+            .store-img {
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 20px;
+    
+                .img-box img{
+                    justify-content: center;
+                    width: 350px;
+                    height: 200px;
+                    
+                }
+            }
+            
+        }
+
+        @media only screen and (max-width: 770px) { 
+            .our-store-title {
+                width: 100%;
+                text-align: center;
+            }
+        }
+        
     }
+
+
     
     .why-bachira {
         margin-top: 100px;
@@ -180,7 +288,13 @@
             }
         }
 
+        @media only screen and (max-width: 770px) { 
+            .bachira-box {
+                justify-content: center !important;
+            }
+        }
     }
+
 
     .All-brands {
         margin-top: 100px;
@@ -233,6 +347,18 @@
             }
         }
 
-       
     }
+
+    @media only screen and (max-width: 770px) { 
+        .All-brands h1 {
+            text-align: center !important;
+            font-size: 25px;
+        }
+        .all-brand {
+            width: 100%;
+            justify-content: center !important;
+        }
+    }
+
+  
 }

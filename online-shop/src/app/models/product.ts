@@ -5,5 +5,6 @@ export class product {
     image: string;
     size?: string;
     category: string;
+    email: string;
     id?: string;
   }

@@ -10,9 +10,9 @@
            <p >Category: {{product.category}}<p>
            <h5>Price: {{product.price}} $</h5>
            <p >size: {{product.size}}</p>
-           <button type="button" (click)="deleteProduct(product.id)" class="btn btn-danger delete">Delete</button>
+           <button type="button" *ngIf="productOwner(product)" (click)="deleteProduct(product.id)" class="btn btn-danger delete">Delete</button>
          </div>
-       </div>
+        </div>
     </div>
   </div>
 

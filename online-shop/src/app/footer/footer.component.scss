@@ -64,3 +64,14 @@ footer {
         }
     }
 }
+
+@media only screen and (max-width: 785px) { 
+   
+    .box-2 {
+        gap: 20px !important;
+        justify-content: space-evenly;
+    }
+
+
+   
+}

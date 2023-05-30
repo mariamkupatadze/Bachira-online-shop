@@ -2,6 +2,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FirebaseService } from '../services/firebase.service';
 import { MatDialog } from '@angular/material/dialog';
 import { AddProductPageComponent } from '../add-product-page/add-product-page.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -10,7 +11,7 @@ import { AddProductPageComponent } from '../add-product-page/add-product-page.co
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private firebaseService: FirebaseService, private _dialog: MatDialog) {}
+  constructor(private firebaseService: FirebaseService, private _dialog: MatDialog, private route: Router) {}
 
   ngOnInit(): void { }
 
@@ -19,12 +20,16 @@ export class HeaderComponent implements OnInit {
   }
 
   openAddProduct() {
-    this._dialog.open(AddProductPageComponent);
+    let dialog = this._dialog.open(AddProductPageComponent);
+
+    dialog.afterClosed().subscribe(() => {
+      this.route.navigateByUrl('/', { skipLocationChange: true }).then(() =>
+        this.route.navigate(['products']));    
+      });
     }
 
   signout() {
     this.firebaseService.logOut();
   }
 
- 
 } 

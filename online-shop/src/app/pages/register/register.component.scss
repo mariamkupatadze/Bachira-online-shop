@@ -124,3 +124,9 @@
          }
     }
 }
+
+@media only screen and (max-width: 420px) { 
+    .sign-up {
+        width: 300px !important;     
+    }
+}

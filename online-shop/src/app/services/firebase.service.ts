@@ -9,6 +9,7 @@ import { Observable } from 'rxjs';
 })
 export class FirebaseService {
   
+  
   constructor( public firebaseAuth: AngularFireAuth,  private _http: HttpClient ) {  }
 
     

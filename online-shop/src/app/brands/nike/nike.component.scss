@@ -6,8 +6,8 @@
     flex-wrap: wrap;
 
     .card {
-        width: 600px;
-        height: 700px;
+        width: 400px;
+        height: 600px;
         box-shadow: 3px 3px 10px gray;
 
         img {
@@ -60,3 +60,9 @@
         }
     }
 }
+
+@media only screen and (max-width:1000px) { 
+    .container {
+     justify-content: center !important;
+    }
+ }
