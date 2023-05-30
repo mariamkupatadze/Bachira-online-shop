@@ -20,7 +20,7 @@
     <img src="https://e1.pxfuel.com/desktop-wallpaper/479/320/desktop-wallpaper-dark-green-mobile-dark-green-thumbnail.jpg" class="card-img-top" alt="...">
     <div class="card-body">
       <div class="box">
-        <h1>{{ firstLetter }}</h1>
+        <h1>{{ firstLetter |  uppercase  }}</h1>
       </div>
       <h3 class="card-title">{{user?.firstname}}  {{user?.lastname}}</h3>
       <h5 class="card-text">{{user?.email}} </h5>

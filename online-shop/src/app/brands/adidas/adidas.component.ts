@@ -9,41 +9,27 @@ export class AdidasComponent {
 ProductsArray : any = [
     {
       img: 'https://i8.amplience.net/i/jpl/sz_592737_b?qlt=92&w=750&h=580&v=1&fmt=auto',
-      name: 'adidas Originals Superstar 82',
-      price: '110',
-      sale: true
-      
+      name: 'adidas Originals Superstar 82'
     },
     {
       img: 'https://i8.amplience.net/i/jpl/sz_619045_b?qlt=92&w=750&h=580&v=1&fmt=auto',
-      name: 'adidas Originals Centennial 85 Low',
-      price: '90',
-      sale: true
+      name: 'adidas Originals Centennial 85 Low'
     },
     {
       img: 'https://i8.amplience.net/i/jpl/sz_615165_a?qlt=92&w=750&h=580&v=1&fmt=auto',
-      name: 'adidas Originals Superstar 82',
-      price: '110',
-      sale: true
-      
+      name: 'adidas Originals Superstar 82'  
     },
     {
       img: 'https://i8.amplience.net/i/jpl/sz_619040_c?qlt=92&w=750&h=580&v=1&fmt=auto',
-      name: 'adidas Originals Centennial 85 Low',
-      price: '90',
-      sale: false
+      name: 'adidas Originals Centennial 85 Low'
     },
     {
       img: 'https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c10fcd90c433455e8f79ad0800cb4469_9366/NMD_R1_Primeblue_Shoes_Black_GZ9257_01_standard.jpg',
-      name: 'Adidas',
-      price: '400',
-      sale: false
+      name: 'Adidas Cloudfoam shoes'
     },
     {
       img: 'https://adjarastoremedia.s3.amazonaws.com/media/product/193105903410-2.jpeg',
-      name: 'Adidas',
-      price: '200',  
-      sale: true
+      name: 'Adidas Originals Centennial'
     }
   ]
 }
